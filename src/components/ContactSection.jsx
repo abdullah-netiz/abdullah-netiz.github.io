@@ -37,7 +37,7 @@ export default function ContactSection() {
         particleCount: 80,
         spread: 70,
         origin: { y: 0.7 },
-        colors: ['#00f0ff', '#8a2be2', '#10b981', '#ffffff']
+        colors: ['#d7f000', '#e36d43', '#8fa63a', '#f1f0e9']
       });
 
       // Reset form

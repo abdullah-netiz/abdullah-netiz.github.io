@@ -35,7 +35,7 @@ export default function Scene3D() {
     // Inner glowing icosahedron
     const innerGeo = new THREE.IcosahedronGeometry(3.6, 1);
     const innerMat = new THREE.MeshBasicMaterial({
-      color: 0x00f0ff,
+      color: 0xd7f000,
       wireframe: true,
       transparent: true,
       opacity: 0.75,
@@ -46,7 +46,7 @@ export default function Scene3D() {
     // Outer cybernetic ring (torus)
     const ringGeo = new THREE.TorusGeometry(5.2, 0.08, 16, 100);
     const ringMat = new THREE.MeshBasicMaterial({
-      color: 0x8a2be2,
+      color: 0xe36d43,
       transparent: true,
       opacity: 0.6,
       wireframe: true
@@ -58,7 +58,7 @@ export default function Scene3D() {
     const ring2 = new THREE.Mesh(
       new THREE.TorusGeometry(6.0, 0.06, 16, 100),
       new THREE.MeshBasicMaterial({
-        color: 0x10b981,
+        color: 0x8fa63a,
         transparent: true,
         opacity: 0.4,
         wireframe: true
@@ -72,7 +72,7 @@ export default function Scene3D() {
     const solidCore = new THREE.Mesh(
       new THREE.SphereGeometry(1.4, 24, 24),
       new THREE.MeshBasicMaterial({
-        color: 0x00f0ff,
+        color: 0xd7f000,
         wireframe: false,
         transparent: true,
         opacity: 0.25
@@ -107,7 +107,7 @@ export default function Scene3D() {
 
     // Particle Points
     const particleMat = new THREE.PointsMaterial({
-      color: 0x00f0ff,
+      color: 0xd7f000,
       size: 0.22,
       transparent: true,
       opacity: 0.85
@@ -122,7 +122,7 @@ export default function Scene3D() {
     lineGeo.setAttribute('position', new THREE.BufferAttribute(linePositions, 3));
 
     const lineMat = new THREE.LineBasicMaterial({
-      color: 0x8a2be2,
+      color: 0xe36d43,
       transparent: true,
       opacity: 0.35,
       blending: THREE.AdditiveBlending

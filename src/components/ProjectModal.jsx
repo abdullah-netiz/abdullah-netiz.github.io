@@ -34,7 +34,7 @@ export default function ProjectModal({ project, onClose }) {
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Grid background
-      ctx.strokeStyle = 'rgba(0, 240, 255, 0.08)';
+      ctx.strokeStyle = 'rgba(215, 240, 0, 0.08)';
       ctx.lineWidth = 1;
       for (let x = 0; x < canvas.width; x += 30) {
         ctx.beginPath();
@@ -58,7 +58,7 @@ export default function ProjectModal({ project, onClose }) {
       ];
 
       // Draw lines
-      ctx.strokeStyle = '#00f0ff';
+      ctx.strokeStyle = '#d7f000';
       ctx.lineWidth = 2;
       ctx.beginPath();
       ctx.moveTo(nodes[0].x, nodes[0].y);
@@ -69,7 +69,7 @@ export default function ProjectModal({ project, onClose }) {
 
       // Draw nodes
       nodes.forEach((node, i) => {
-        ctx.fillStyle = i === 1 ? '#a855f7' : '#00f0ff';
+        ctx.fillStyle = i === 1 ? '#e36d43' : '#d7f000';
         ctx.beginPath();
         ctx.arc(node.x, node.y, 8, 0, Math.PI * 2);
         ctx.fill();
@@ -87,7 +87,7 @@ export default function ProjectModal({ project, onClose }) {
       const px = startNode.x + (endNode.x - startNode.x) * progress;
       const py = startNode.y + (endNode.y - startNode.y) * progress;
 
-      ctx.fillStyle = '#10b981';
+      ctx.fillStyle = '#8fa63a';
       ctx.beginPath();
       ctx.arc(px, py, 6, 0, Math.PI * 2);
       ctx.fill();
